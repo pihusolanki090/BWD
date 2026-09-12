@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+    margin: 0;
+  }
+  .slider {
+    position: relative;
+    width: 400px;
+    height: 250px;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    opacity: 0;
+    animation: fade 6s infinite;
+  }
+
+  @keyframes fade {
+    0%   { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    90%  { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .slide:nth-child(1) { animation-delay: 0s; }
+  .slide:nth-child(2) { animation-delay: 3s; z-index: 1; }
+
+  .caption {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+  
+<div class="slider">
+  <div class="slide" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVRTHXeonhvBZDzp3CAfAH3Z3K82IlJ3SI2HizRpv5qg&s=10)"></div>
+  <div class="slide" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcq5WQAcPNGapEmZEAQop8npQa2dO2Rv-g0j8yJmEkgQ&s=10)"></div>
+  <div class="slide" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIYQ8eNRDnI_Rn_Bw3G3jFmJBflaod2rFMDMYQDQhpQ&s=10)"></div>
+  <div class="slide" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKyslPSpcCOE22fRWhBurQ9sueLZ4FBjHh-BS1p6mYA&s=10)"></div>
+  <div class="caption">A simple four-photo slider</div>
+</div>
+
+</body>
+</html>

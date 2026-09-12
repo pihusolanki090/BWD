@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple z-index example</title>
+
+  <style>
+    
+
+    .box-behind {
+      position: relative;   
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      background: lightblue;
+      font-size: 20px;
+    }
+
+    .box-front {
+      position: relative;   
+      top: -80px;            
+      left: 50px;
+      width: 150px;
+      height: 150px;
+      background: orange;
+      font-size: 20px;
+      z-index: 1;            
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>html page using z-index</h1>
+  
+
+  <div class="box-behind">
+    <p><center><b>this is the box behind</b></center></p> </div>
+  <div class="box-front">
+    <p><center><b>this is the box in front</b></center></p></div>
+
+</body>
+</html>
