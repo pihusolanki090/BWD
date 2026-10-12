@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forgot Password</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: lightblue;
+}
+
+.back {
+    display: inline-block;
+    margin: 35px 12px;
+    color: deepskyblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.panel {
+    width: 72%;
+    margin: 40px auto;
+    padding: 40px;
+    background: aliceblue;
+    border-radius: 15px;
+}
+
+.form-box {
+    padding: 35px;
+    background: white;
+    border: 1px solid skyblue;
+    border-radius: 12px;
+}
+
+h2 {
+    color: deepskyblue;
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px 15px;
+    margin-top: 20px;
+    background: aliceblue;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 25px;
+    background: deepskyblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+a {
+    color: deepskyblue;
+}
+
+#forgot {
+    display: none;
+}
+
+#forgot:target {
+    display: block;
+}
+
+#forgot:target ~ #login {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="panel">
+
+    <div class="form-box" id="forgot">
+        <h2>Forgot Password</h2>
+
+        <form action="la17.html">
+            <label>Registered Email*</label>
+            <input type="email"
+                   placeholder="Enter Registered Email" required>
+
+            <button type="submit">Reset Password</button>
+        </form>
+
+        <p><a href="la17-1back1.html">Back to Login</a></p>
+    </div>
+
+    <div class="form-box" id="login">
+        <h2>Login Details</h2>
+
+        <form action="la17.html">
+            <label>Username*</label>
+            <input type="text" placeholder="Enter Username" required>
+
+            <label>Password*</label>
+            <input type="password" placeholder="Enter Password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p><a href="la17-1back2.html">Registration</a></p>
+        <p><a href="#forgot">Forgot Password?</a></p>
+        <p><a href="la17.html">Back to Home</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>

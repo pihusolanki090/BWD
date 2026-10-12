@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: deepskyblue;
+}
+
+.back {
+    position: absolute;
+    top: 35px;
+    left: 12px;
+    color: deepskyblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.tabs {
+    text-align: center;
+    padding-top: 22px;
+}
+
+.tab {
+    display: inline-block;
+    width: 180px;
+    padding: 15px 0;
+    background:lightgray;
+    color:darkgray;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.active {
+    background: deepskyblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.panel {
+    width: 400px;
+    margin: 65px auto;
+    padding: 40px;
+    background:lightblue;
+    border-radius: 15px;
+}
+
+.form-box {
+    padding: 35px;
+    background: white;
+    border: 1px solid skyblue;
+    border-radius: 12px;
+}
+
+h2 {
+    color: deepskyblue;
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px 15px;
+    margin-top: 20px;
+    background: verylightblue;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: deepskyblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+a {
+    color: deepskyblue;
+}
+</style>
+</head>
+
+<body>
+
+<a class="back" href="la17.html">❮ Back to login</a>
+
+<div class="tabs">
+    <a class="tab" href="la17.html">Login</a>
+    <span class="tab active">Registration</span>
+</div>
+
+<div class="panel">
+    <div class="form-box">
+        <h2>Registration Details</h2>
+
+        <form action="la17.html">
+            <label>Full Name*</label>
+            <input type="text" placeholder="Enter Full Name" required>
+
+            <label>Email*</label>
+            <input type="email" placeholder="Enter Email" required>
+
+            <label>Username*</label>
+            <input type="text" placeholder="Enter Username" required>
+
+            <label>Password*</label>
+            <input type="password" placeholder="Enter Password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account?
+            <a href="la17.html">Login</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

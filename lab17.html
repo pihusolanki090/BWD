@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: white;
+        text-align: center;
+        margin: 0;
+        padding-top: 25px;
+        color: darkslategray;
+    }
+
+    .container {
+        width: 400px;
+        margin: 55px auto;
+        padding: 35px;
+        background: aliceblue;
+        border-radius: 18px;
+        border: 1px solid lightblue;
+    }
+
+    .tabs {
+        margin-bottom: 30px;
+    }
+
+    .tab {
+        display: inline-block;
+        width: 180px;
+        padding: 15px 0;
+        margin: 0;
+        background: lavender;
+        color: darkslategray;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+    .tabs span.tab {
+        background: dodgerblue;
+        color: white;
+    }
+
+    h1 {
+        color: royalblue;
+        margin-bottom: 30px;
+    }
+
+    input {
+        width: 90%;
+        padding: 17px;
+        margin: 12px 0;
+        background: aliceblue;
+        border: 1px solid lightblue;
+        border-radius: 7px;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 13px 35px;
+        margin: 18px 0;
+        background: dodgerblue;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    a {
+        color: royalblue;
+    }
+
+    p {
+        margin-top: 18px;
+    }
+</style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+    <div class="tabs">
+        <span class="tab">Login</span>
+        <a class="tab" href="la17-1back2.html">Registration</a>
+    </div>
+
+    <h1>Login</h1>
+
+    <form action="la17-1back1.html">
+        <input type="text" name="username"
+        placeholder="Enter Username" required>
+
+        <input type="password" name="password"
+        placeholder="Enter Password" required>
+
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    <p>
+        <a href="la17-1back1.html#forgot">
+            Forgot Password?
+        </a>
+    </p>
+</div>
+
+</body>
+</html>
+
